@@ -1,0 +1,25 @@
+@using DevExpress.Web.Mvc.UI;
+@using DevExpress.Web.Mvc;
+
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "myGridView";
+    settings.CallbackRouteValues = new {
+        Controller = "Home", Action = "GridViewPart"
+    };
+    settings.Width = 450;
+    settings.KeyFieldName = "id";
+
+    settings.Columns.Add("id");
+    settings.Columns.Add("name");
+    
+    settings.Settings.ShowFilterRow = true;
+    settings.Settings.ShowFilterRowMenu = true;
+    settings.PreRender = (sender, e) => {
+        ASPxGridView grid = (ASPxGridView)sender;
+        foreach (GridViewDataColumn col in grid.Columns) {
+            col.Settings.AutoFilterCondition = AutoFilterCondition.Contains;
+        }
+    };
+
+}).Bind(Model).GetHtml()
+

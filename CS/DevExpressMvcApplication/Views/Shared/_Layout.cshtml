@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    @Html.DevExpress().GetStyleSheets( 
+        new StyleSheet { ExtensionSuite = ExtensionSuite.NavigationAndLayout }, 
+        new StyleSheet { ExtensionSuite = ExtensionSuite.Editors }, 
+        new StyleSheet { ExtensionSuite = ExtensionSuite.HtmlEditor }, 
+        new StyleSheet { ExtensionSuite = ExtensionSuite.GridView }, 
+        new StyleSheet { ExtensionSuite = ExtensionSuite.Chart },
+        new StyleSheet { ExtensionSuite = ExtensionSuite.Report } 
+	) 
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    @Html.DevExpress().GetScripts( 
+        new Script { ExtensionSuite = ExtensionSuite.NavigationAndLayout }, 
+	    new Script { ExtensionSuite = ExtensionSuite.HtmlEditor }, 
+	    new Script { ExtensionSuite = ExtensionSuite.GridView }, 
+	    new Script { ExtensionSuite = ExtensionSuite.Editors }, 
+        new Script { ExtensionSuite = ExtensionSuite.Chart },
+	    new Script { ExtensionSuite = ExtensionSuite.Report } 
+    ) 
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                @{Html.DevExpress().NavBar(s => {
+                      s.Name = "NavigationBar";
+                      s.Groups.Add("View").Items.AddRange(new NavBarItem[] {
+                      new MVCxNavBarItem("View Customers", "nbiViewCustomers", string.Empty,
+                          "Customers"),
+                      new MVCxNavBarItem("View Orders", "nbiViewOrders", string.Empty,
+                          "Orders"),
+                        });
+                  }).Render();
+                }
+            </td>
+            <td>
+                @RenderBody()
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

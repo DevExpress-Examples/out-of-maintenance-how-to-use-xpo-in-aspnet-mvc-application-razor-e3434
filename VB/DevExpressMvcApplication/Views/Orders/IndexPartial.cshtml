@@ -1,0 +1,28 @@
+﻿@{
+    Html.DevExpress().GridView(s => {
+        s.Name = "viewOrders";
+        s.CallbackRouteValues = new { Controller = "Orders", Action = "IndexPartial" };
+        s.Columns.Add("Name");
+        s.Columns.Add(settings => {
+            settings.Name = "colCustomerRef";
+            settings.FieldName = "Customer";
+            settings.Caption = "Customer Name";
+            settings.ColumnType = MVCxGridViewColumnType.ComboBox;
+            ComboBoxProperties properties = (ComboBoxProperties)settings.PropertiesEdit;
+            properties.DataSource = Model.CustomersLookUpData;
+            properties.ValueField = "ID";
+            properties.TextField = "Name";
+            properties.ValueType = typeof(int);
+        });
+        s.CommandColumn.Visible = true;
+        s.CommandColumn.EditButton.Visible = true;
+        s.CommandColumn.CancelButton.Visible = true;
+        s.CommandColumn.DeleteButton.Visible = true;
+        s.CommandColumn.NewButton.Visible = true;
+        s.KeyFieldName = "ID";
+        s.SettingsEditing.UpdateRowRouteValues = new { Controller = "Orders", Action = "EditOrder" };
+        s.SettingsEditing.DeleteRowRouteValues = new { Controller = "Orders", Action = "DeleteOrder" };
+        s.SettingsEditing.AddNewRowRouteValues = new { Controller = "Orders", Action = "EditOrder" };
+        s.SettingsEditing.Mode = GridViewEditingMode.EditForm;
+    }).Bind(Model.Source).GetHtml();
+}

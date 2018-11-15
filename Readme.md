@@ -1,3 +1,24 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BaseXpoController.cs](./CS/Controllers/BaseXpoController.cs) (VB: [BaseXpoController.vb](./VB/Controllers/BaseXpoController.vb))
+* [CustomersController.cs](./CS/Controllers/CustomersController.cs) (VB: [CustomersController.vb](./VB/Controllers/CustomersController.vb))
+* [HomeController.cs](./CS/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/Controllers/HomeController.vb))
+* [OrdersController.cs](./CS/Controllers/OrdersController.cs) (VB: [OrdersController.vb](./VB/Controllers/OrdersController.vb))
+* [XpoHelper.cs](./CS/Helpers/XpoHelper.cs) (VB: [XpoHelper.vb](./VB/Helpers/XpoHelper.vb))
+* [Customer.cs](./CS/Models/Customer.cs) (VB: [CustomerViewModel.vb](./VB/ViewModels/CustomerViewModel.vb))
+* [Order.cs](./CS/Models/Order.cs) (VB: [OrdersViewModel.vb](./VB/ViewModels/OrdersViewModel.vb))
+* [BaseViewModel.cs](./CS/ViewModels/BaseViewModel.cs) (VB: [BaseViewModel.vb](./VB/ViewModels/BaseViewModel.vb))
+* [CustomerViewModel.cs](./CS/ViewModels/CustomerViewModel.cs) (VB: [CustomerViewModel.vb](./VB/ViewModels/CustomerViewModel.vb))
+* [OrdersViewModel.cs](./CS/ViewModels/OrdersViewModel.cs) (VB: [OrdersViewModel.vb](./VB/ViewModels/OrdersViewModel.vb))
+* [OrderViewModel.cs](./CS/ViewModels/OrderViewModel.cs) (VB: [OrderViewModel.vb](./VB/ViewModels/OrderViewModel.vb))
+* [Index.cshtml](./CS/Views/Customers/Index.cshtml)
+* [IndexPartial.cshtml](./CS/Views/Customers/IndexPartial.cshtml)
+* [Index.cshtml](./CS/Views/Home/Index.cshtml)
+* [Index.cshtml](./CS/Views/Orders/Index.cshtml)
+* [IndexPartial.cshtml](./CS/Views/Orders/IndexPartial.cshtml)
+* **[_Layout.cshtml](./CS/Views/Shared/_Layout.cshtml)**
+<!-- default file list end -->
 # How to use XPO in ASP.NET MVC application (Razor)
 
 

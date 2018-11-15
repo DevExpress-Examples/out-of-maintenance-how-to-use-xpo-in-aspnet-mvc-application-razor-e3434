@@ -1,3 +1,25 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BaseXpoController.cs](./CS/DevExpressMvcApplication/Controllers/BaseXpoController.cs) (VB: [BaseXpoController.vb](./VB/DevExpressMvcApplication/Controllers/BaseXpoController.vb))
+* [CustomersController.cs](./CS/DevExpressMvcApplication/Controllers/CustomersController.cs) (VB: [CustomersController.vb](./VB/DevExpressMvcApplication/Controllers/CustomersController.vb))
+* [HomeController.cs](./CS/DevExpressMvcApplication/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/DevExpressMvcApplication/Controllers/HomeController.vb))
+* [OrdersController.cs](./CS/DevExpressMvcApplication/Controllers/OrdersController.cs) (VB: [OrdersController.vb](./VB/DevExpressMvcApplication/Controllers/OrdersController.vb))
+* [XpoHelper.cs](./CS/DevExpressMvcApplication/Helpers/XpoHelper.cs) (VB: [XpoHelper.vb](./VB/DevExpressMvcApplication/Helpers/XpoHelper.vb))
+* [Customer.cs](./CS/DevExpressMvcApplication/Models/Customer.cs) (VB: [Customer.vb](./VB/DevExpressMvcApplication/Models/Customer.vb))
+* [Order.cs](./CS/DevExpressMvcApplication/Models/Order.cs) (VB: [Order.vb](./VB/DevExpressMvcApplication/Models/Order.vb))
+* [BaseViewModel.cs](./CS/DevExpressMvcApplication/ViewModels/BaseViewModel.cs) (VB: [BaseViewModel.vb](./VB/DevExpressMvcApplication/ViewModels/BaseViewModel.vb))
+* [CustomerViewModel.cs](./CS/DevExpressMvcApplication/ViewModels/CustomerViewModel.cs) (VB: [CustomerViewModel.vb](./VB/DevExpressMvcApplication/ViewModels/CustomerViewModel.vb))
+* [OrdersViewModel.cs](./CS/DevExpressMvcApplication/ViewModels/OrdersViewModel.cs) (VB: [OrdersViewModel.vb](./VB/DevExpressMvcApplication/ViewModels/OrdersViewModel.vb))
+* [OrderViewModel.cs](./CS/DevExpressMvcApplication/ViewModels/OrderViewModel.cs) (VB: [OrderViewModel.vb](./VB/DevExpressMvcApplication/ViewModels/OrderViewModel.vb))
+* [Index.cshtml](./CS/DevExpressMvcApplication/Views/Customers/Index.cshtml)
+* [IndexPartial.cshtml](./CS/DevExpressMvcApplication/Views/Customers/IndexPartial.cshtml)
+* [GridViewPartial.cshtml](./CS/DevExpressMvcApplication/Views/Home/GridViewPartial.cshtml)
+* [Index.cshtml](./CS/DevExpressMvcApplication/Views/Home/Index.cshtml)
+* [Index.cshtml](./CS/DevExpressMvcApplication/Views/Orders/Index.cshtml)
+* [IndexPartial.cshtml](./CS/DevExpressMvcApplication/Views/Orders/IndexPartial.cshtml)
+* **[_Layout.cshtml](./CS/DevExpressMvcApplication/Views/Shared/_Layout.cshtml)**
+<!-- default file list end -->
 # How to use XPO in ASP.NET MVC application (Razor)
 
 

@@ -1,1 +1,0 @@
-<h2>Select a view</h2>
